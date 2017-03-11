@@ -129,6 +129,9 @@ function randomBooksForSubject(subject) {
         case "تاريخ":
             list = JSON.parse(fs.readFileSync(__dirname + '/public/list_history.json', 'utf8'));
             break;
+        case "علم نفس":
+            list = JSON.parse(fs.readFileSync(__dirname + '/public/list_psychology.json', 'utf8'));
+            break;
         default:
             list = JSON.parse(fs.readFileSync(__dirname + '/public/list_random.json', 'utf8'));
     }
